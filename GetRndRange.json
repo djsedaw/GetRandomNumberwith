@@ -208,7 +208,7 @@
               "parameters": [
                 "minGap",
                 "=",
-                "8"
+                "6"
               ]
             },
             {
@@ -218,7 +218,7 @@
               "parameters": [
                 "maxGap",
                 "=",
-                "10"
+                "7"
               ]
             },
             {
@@ -228,9 +228,15 @@
               "parameters": [
                 "RandReturn",
                 "=",
-                "GetRndRangewithGap::GetRndRanG(Variable(min), Variable(max), Variable(minGap), Variable(maxGap))"
+                "RandomRangewithGap::RndRanwGap(Variable(min), Variable(max), Variable(minGap), Variable(maxGap))"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
             {
               "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
@@ -353,7 +359,7 @@
       "fullName": "",
       "helpPath": "",
       "iconUrl": "",
-      "name": "GetRndRangewithGap",
+      "name": "RandomRangewithGap",
       "previewIconUrl": "",
       "shortDescription": "",
       "version": "",
@@ -363,10 +369,10 @@
       "dependencies": [],
       "eventsFunctions": [
         {
-          "description": "getRandomNumberWithGap",
-          "fullName": "GetRandomNumberWithGap",
+          "description": "RandomrangewithGap",
+          "fullName": "RandomRangewithGap",
           "functionType": "Expression",
-          "name": "GetRndRanG",
+          "name": "RndRanwGap",
           "sentence": "getRandomNumberWithGap",
           "events": [
             {
@@ -413,6 +419,8 @@
                 "if (randomNumber !== null) {",
                 "    console.log(\"Random number:\", randomNumber);",
                 "}",
+                "",
+                "// Return random number",
                 "runtimeScene.getVariables().get(\"GetRandReturnnumber\").setNumber(randomNumber);"
               ],
               "parameterObjects": "",
