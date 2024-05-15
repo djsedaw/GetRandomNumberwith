@@ -1,1 +1,1 @@
-Gdevelop fungtion
+Gdevelop function
