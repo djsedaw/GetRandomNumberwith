@@ -372,7 +372,7 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "runtimeScene.setBackgroundColor(100,100,240);",
+                "//runtimeScene.setBackgroundColor(100,100,240);",
                 "",
                 "function getRandomNumberWithGap(min, max, excludeStart, excludeEnd) {",
                 "    // Check if the exclude range is within the min and max range",
